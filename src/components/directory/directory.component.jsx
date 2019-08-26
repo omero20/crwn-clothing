@@ -43,7 +43,7 @@ class Directory extends React.Component {
       ]
     };
   }
-  asd = d469c0c081930d588b49d9d62fcfe787da34a0bb;
+  asd = d469c0c081930d588b49d9d62fcfe787da34a0333bb;
   render() {
     return (
       <div className="directory-menu">
