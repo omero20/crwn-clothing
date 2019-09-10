@@ -1,5 +1,4 @@
-import { createSelector } from "reselect";
-import { create } from "istanbul-reports";
+import { createSelector } from 'reselect';
 
 const selectCart = state => state.cart;
 
@@ -17,8 +16,8 @@ export const selectCartItemsCount = createSelector(
   [selectCartItems],
   cartItems =>
     cartItems.reduce(
-      (accumalatedQuantitiy, cartItem) =>
-        accumalatedQuantitiy + cartItem.quantity,
+      (accumalatedQuantity, cartItem) =>
+        accumalatedQuantity + cartItem.quantity,
       0
     )
 );
@@ -27,8 +26,8 @@ export const selectCartTotal = createSelector(
   [selectCartItems],
   cartItems =>
     cartItems.reduce(
-      (accumalatedQuantitiy, cartItem) =>
-        accumalatedQuantitiy + cartItem.quantity * cartItem.price,
+      (accumalatedQuantity, cartItem) =>
+        accumalatedQuantity + cartItem.quantity * cartItem.price,
       0
     )
 );
